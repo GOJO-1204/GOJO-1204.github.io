@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bibek Kumar Mangaraj – Portfolio</title>
+  <meta name="description" content="Full Stack (MERN) developer with applied machine learning and NLP experience.">
+
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <!-- small additions for this portfolio (kept here so style.css stays untouched) -->
+  <style>
+    .avatar-box { overflow: hidden; }
+    .avatar-box img { border-radius: inherit; object-fit: cover; }
+    .skills-item p { color: var(--light-gray); font-size: var(--fs-6); font-weight: var(--fw-300); line-height: 1.6; }
+    .project-ph { width: 100%; aspect-ratio: 16 / 10; display: flex; justify-content: center; align-items: center; background: var(--bg-gradient-onyx); color: var(--orange-yellow-crayola); font-size: 52px; }
+    .project-desc { color: var(--light-gray); font-size: var(--fs-6); font-weight: var(--fw-300); line-height: 1.6; margin: 6px 10px 0; }
+    .contact-note { color: var(--light-gray); font-size: var(--fs-6); font-weight: var(--fw-300); line-height: 1.6; margin-bottom: 25px; }
+  </style>
+</head>
+
+<body>
+
+  <main>
+
+    <!-- #SIDEBAR -->
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Bibek Kumar Mangaraj" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Bibek Kumar Mangaraj">Bibek Mangaraj</h1>
+          <p class="title">Full Stack Developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="mail-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+              <a href="mailto:mangarajbibek05@gmail.com" class="contact-link">mangarajbibek05@gmail.com</a>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="school-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Education</p>
+              <address>B.Tech CSE, GCE Kalahandi</address>
+            </div>
+          </li>
+
+          <li class="contact-item">
+            <div class="icon-box"><ion-icon name="location-outline"></ion-icon></div>
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+              <address>Odisha, India</address>
+            </div>
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+          <li class="social-item">
+            <a href="https://github.com/GOJO-1204" class="social-link" aria-label="GitHub"><ion-icon name="logo-github"></ion-icon></a>
+          </li>
+          <li class="social-item">
+            <a href="https://linkedin.com/in/bibekmangaraj" class="social-link" aria-label="LinkedIn"><ion-icon name="logo-linkedin"></ion-icon></a>
+          </li>
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+    <!-- #main-content -->
+    <div class="main-content">
+
+      <nav class="navbar">
+        <ul class="navbar-list">
+          <li class="navbar-item"><button class="navbar-link active" data-nav-link>About</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Resume</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Portfolio</button></li>
+          <li class="navbar-item"><button class="navbar-link" data-nav-link>Contact</button></li>
+        </ul>
+      </nav>
+
+
+      <!-- #ABOUT -->
+      <article class="about active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I'm a Full Stack (MERN) developer with applied machine learning and NLP experience, studying B.Tech in
+            Computer Science and Engineering (CGPA 8.2). I've shipped production web apps in two internships: a
+            self-service employee portal for NALCO and four client-facing e-commerce websites at Codec Technologies India.
+          </p>
+
+          <p>
+            I also led development of an AI-powered college placement platform with an NLP resume scoring engine,
+            validated by 100+ students and 15+ faculty. I work with Git, design RESTful APIs, and take projects through
+            to deployment. Outside code, I edit and design our college magazine and take photographs.
+          </p>
+        </section>
+
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+                <p class="service-item-text">
+                  Full-stack apps with React.js, Node.js, Express and MongoDB, with JWT auth and RESTful APIs.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="AI apps icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">AI and NLP apps</h4>
+                <p class="service-item-text">
+                  RAG chatbots and ML-powered tools using LangChain, FAISS, ChromaDB and Scikit-learn.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="Design icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">UI/UX and graphic design</h4>
+                <p class="service-item-text">
+                  Clean interfaces and print layouts, including editing and designing a college annual magazine.
+                </p>
+              </div>
+            </li>
+
+            <li class="service-item">
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="Camera icon" width="40">
+              </div>
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+                <p class="service-item-text">
+                  Event and portrait photography, shot and edited by me.
+                </p>
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!-- #RESUME -->
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">B.Tech in Computer Science and Engineering</h4>
+              <span>2023 — 2027</span>
+              <p class="timeline-text">Government College of Engineering Kalahandi. CGPA 8.2.</p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="timeline">
+          <div class="title-wrapper">
+            <div class="icon-box"><ion-icon name="book-outline"></ion-icon></div>
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">System Intern, National Aluminium Company Limited</h4>
+              <span>June — July 2026</span>
+              <p class="timeline-text">
+                Built a self-service employee portal as a solo intern, where retired employees log in with a unique ID
+                to view pension details, schemes and perks. Created a Power BI dashboard for management, and
+                co-designed a Cybersecurity Maturity Assessment Framework covering 19 security domains (CMMI/NIST),
+                with a 1 to 5 scoring model.
+              </p>
+            </li>
+
+            <li class="timeline-item">
+              <h4 class="h4 timeline-item-title">Full-Stack Web Developer, Codec Technologies India</h4>
+              <span>June — August 2025</span>
+              <p class="timeline-text">
+                Delivered 4 client-ready e-commerce and business websites in 3 months, each passing supervisor review.
+                Built end-to-end shopping systems (listings, cart, checkout) in a 6-member team using React.js,
+                Node.js, MongoDB and Git.
+              </p>
+            </li>
+
+          </ol>
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+            <li class="skills-item">
+              <h5 class="h5">Languages</h5>
+              <p>JavaScript, Python, HTML, CSS</p>
+            </li>
+            <li class="skills-item">
+              <h5 class="h5">Frameworks and libraries</h5>
+              <p>React.js, Node.js, Express.js, Scikit-learn, LangChain</p>
+            </li>
+            <li class="skills-item">
+              <h5 class="h5">Databases</h5>
+              <p>MongoDB, Supabase, ChromaDB, FAISS</p>
+            </li>
+            <li class="skills-item">
+              <h5 class="h5">Tools and platforms</h5>
+              <p>Git, GitHub, JWT, RESTful APIs, Power BI, Streamlit</p>
+            </li>
+            <li class="skills-item">
+              <h5 class="h5">Also</h5>
+              <p>Data analytics and visualization, cybersecurity risk assessment, UI/UX design</p>
+            </li>
+            <li class="skills-item">
+              <h5 class="h5">Recognition and leadership</h5>
+              <p>Smart India Hackathon 2025 and 2026 (selected, state level), Startup Odisha 2023-24 (finalist), President of the College Literary Club, Placement Coordinator</p>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!-- #PORTFOLIO -->
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+            <li class="filter-item"><button class="active" data-filter-btn>All</button></li>
+            <li class="filter-item"><button data-filter-btn>Web development</button></li>
+            <li class="filter-item"><button data-filter-btn>AI projects</button></li>
+          </ul>
+
+          <div class="filter-select-box">
+            <button class="filter-select" data-select>
+              <div class="select-value" data-selecct-value>Select category</div>
+              <div class="select-icon"><ion-icon name="chevron-down"></ion-icon></div>
+            </button>
+
+            <ul class="select-list">
+              <li class="select-item"><button data-select-item>All</button></li>
+              <li class="select-item"><button data-select-item>Web development</button></li>
+              <li class="select-item"><button data-select-item>AI projects</button></li>
+            </ul>
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item active" data-filter-item data-category="web development">
+              <a href="https://github.com/GOJO-1204/COLLEGE_PLACEMENT_PORTAL_">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <div class="project-ph"><ion-icon name="briefcase-outline"></ion-icon></div>
+                </figure>
+                <h3 class="project-title">College Placement Portal</h3>
+                <p class="project-category">React.js, Node.js, MongoDB, Python, Scikit-learn</p>
+                <p class="project-desc">Multi-role platform for students, recruiters and admins, with an NLP-based ATS resume scorer that processes a resume in under 10 seconds.</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="ai projects">
+              <a href="https://github.com/GOJO-1204/HIA_MAIN">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <div class="project-ph"><ion-icon name="pulse-outline"></ion-icon></div>
+                </figure>
+                <h3 class="project-title">Health Insights Agent</h3>
+                <p class="project-category">Streamlit, Groq, LangChain, FAISS, Supabase</p>
+                <p class="project-desc">Dual-agent AI health analyzer with a multi-model Llama cascade, RAG-powered Q&amp;A and persistent sessions. Has served 100+ queries.</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="ai projects">
+              <a href="https://github.com/GOJO-1204/LEGAL-AI">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <div class="project-ph"><ion-icon name="scale-outline"></ion-icon></div>
+                </figure>
+                <h3 class="project-title">Legal Document Analysis Agent</h3>
+                <p class="project-category">Python, GPT-4o, LangChain, ChromaDB, Flask</p>
+                <p class="project-desc">RAG legal chatbot that indexes 100+ pages of the EU AI Act so you can navigate it by asking questions.</p>
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="ai projects">
+              <a href="https://github.com/GOJO-1204/jobmatch">
+                <figure class="project-img">
+                  <div class="project-item-icon-box"><ion-icon name="eye-outline"></ion-icon></div>
+                  <div class="project-ph"><ion-icon name="notifications-outline"></ion-icon></div>
+                </figure>
+                <h3 class="project-title">JobMatch AI (in progress)</h3>
+                <p class="project-category">Ruby, AI</p>
+                <p class="project-desc">AI job alert tool that reads your resume and emails you matching job openings every day.</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+      <!-- #CONTACT -->
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+          <p class="contact-note">I'm open to internships and full-time roles. Send a message and it opens in your email app.</p>
+
+          <form action="mailto:mangarajbibek05@gmail.com" method="post" enctype="text/plain" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+  <script src="./assets/js/script.js"></script>
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
